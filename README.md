@@ -1,2 +1,2 @@
 # syncrocardpay
-Sistema criado para facilitar a conciliação de pagamentos no cartão do varejo.
+Sistema criado para facilitar a conciliação de pagamentos via cartão do varejo.
