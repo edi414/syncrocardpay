@@ -1,0 +1,4 @@
+2025-08-26 10:16:57,719 - main - [WARNING] - Não foi possível conectar ao SFTP: 530 Login incorrect.
+2025-08-26 10:16:57,720 - main - [INFO] - Continuando apenas com sincronização do Google Drive
+2025-08-26 10:16:57,720 - main - [INFO] - Arquivos encontrados no Google Drive: 0
+2025-08-26 10:16:59,103 - main - [INFO] - Arquivos registrados no banco: 0

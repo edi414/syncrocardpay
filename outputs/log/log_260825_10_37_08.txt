@@ -1,0 +1,33 @@
+2025-08-26 10:37:09,014 - main - [INFO] - Conexão FTPS estabelecida com sucesso.
+2025-08-26 10:37:09,615 - main - [INFO] - Arquivos encontrados no SFTP: 255
+2025-08-26 10:37:09,689 - main - [INFO] - Arquivos encontrados no Google Drive: 279
+2025-08-26 10:37:11,038 - main - [INFO] - Arquivos registrados no banco: 0
+2025-08-26 10:37:11,162 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250323_00172
+2025-08-26 10:37:12,176 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20250323_00172
+2025-08-26 10:37:19,028 - main - [ERROR] - Erro ao processar arquivo EXTRATO_UNICA_51309_20250323_00172
+2025-08-26 10:37:19,029 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250319_00161
+2025-08-26 10:37:20,155 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20250319_00161
+2025-08-26 10:37:27,708 - main - [ERROR] - Erro ao processar arquivo EXTRATO_UNICA_51309_20250319_00161
+2025-08-26 10:37:27,710 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250814_00288
+2025-08-26 10:37:27,710 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250814_00288
+2025-08-26 10:37:27,711 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250802_00276
+2025-08-26 10:37:27,711 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250802_00276
+2025-08-26 10:37:27,711 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250104_00076
+2025-08-26 10:37:28,872 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20250104_00076
+2025-08-26 10:37:36,437 - main - [ERROR] - Erro ao processar arquivo EXTRATO_UNICA_51309_20250104_00076
+2025-08-26 10:37:36,438 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250811_00278
+2025-08-26 10:37:36,438 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250811_00278
+2025-08-26 10:37:36,439 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20241108_00027
+2025-08-26 10:37:37,412 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20241108_00027
+2025-08-26 10:37:45,187 - main - [ERROR] - Erro ao processar arquivo EXTRATO_UNICA_51309_20241108_00027
+2025-08-26 10:37:45,189 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250201_00104
+2025-08-26 10:37:46,133 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20250201_00104
+2025-08-26 10:37:53,701 - main - [ERROR] - Erro ao processar arquivo EXTRATO_UNICA_51309_20250201_00104
+2025-08-26 10:37:53,702 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250226_00140
+2025-08-26 10:37:55,000 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20250226_00140
+2025-08-26 10:38:02,188 - main - [ERROR] - Erro ao processar arquivo EXTRATO_UNICA_51309_20250226_00140
+2025-08-26 10:38:02,189 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20241223_00057
+2025-08-26 10:38:03,058 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20241223_00057
+2025-08-26 10:38:10,043 - main - [ERROR] - Erro ao processar arquivo EXTRATO_UNICA_51309_20241223_00057
+2025-08-26 10:38:10,043 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20241221_00057
+2025-08-26 10:38:11,052 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20241221_00057

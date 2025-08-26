@@ -1,0 +1,12 @@
+2025-08-26 10:13:11,985 - root - [WARNING] - Não foi possível conectar ao SFTP: 530 Login incorrect.
+2025-08-26 10:13:11,986 - root - [INFO] - Continuando apenas com sincronização do Google Drive
+2025-08-26 10:13:11,986 - root - [WARNING] - Diretório do Google Drive não encontrado: G:/Meu Drive/Reports/Maquinetas/integration_conciliacao/processed_files
+2025-08-26 10:13:11,987 - root - [INFO] - Arquivos encontrados no Google Drive: 0
+2025-08-26 10:13:13,448 - root - [ERROR] - Erro ao buscar status de processamento dos arquivos: relation "unica_transactions.controle_arquivos" does not exist
+LINE 3:                 FROM "unica_transactions".controle_arquivos
+                             ^
+
+2025-08-26 10:13:13,448 - root - [ERROR] - Erro ao executar o processo: relation "unica_transactions.controle_arquivos" does not exist
+LINE 3:                 FROM "unica_transactions".controle_arquivos
+                             ^
+

@@ -1,0 +1,92 @@
+2025-08-26 10:56:16,828 - main - [INFO] - Conexão FTPS estabelecida com sucesso.
+2025-08-26 10:56:17,428 - main - [INFO] - Arquivos encontrados no SFTP: 255
+2025-08-26 10:56:17,502 - main - [INFO] - Arquivos encontrados no Google Drive: 279
+2025-08-26 10:56:18,833 - main - [INFO] - Arquivos registrados no banco: 5
+2025-08-26 10:56:18,843 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250621_00248
+2025-08-26 10:56:19,870 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20250621_00248
+2025-08-26 10:56:51,265 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20240926_00013
+2025-08-26 10:56:52,183 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20240926_00013
+2025-08-26 10:57:55,908 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250802_00276
+2025-08-26 10:57:55,908 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250802_00276
+2025-08-26 10:57:55,908 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250603_00232
+2025-08-26 10:57:58,098 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20250603_00232
+2025-08-26 10:58:34,660 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250801_00276
+2025-08-26 10:58:34,663 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250801_00276
+2025-08-26 10:58:34,663 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20240930_00018
+2025-08-26 10:58:35,595 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20240930_00018
+2025-08-26 10:59:21,469 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250404_00189
+2025-08-26 10:59:22,171 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20250404_00189
+2025-08-26 11:00:40,594 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20241021_00027
+2025-08-26 11:00:41,505 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20241021_00027
+2025-08-26 11:01:27,952 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20241022_00027
+2025-08-26 11:01:28,849 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20241022_00027
+2025-08-26 11:02:23,322 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20241228_00061
+2025-08-26 11:02:24,505 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20241228_00061
+2025-08-26 11:03:32,620 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250208_00121
+2025-08-26 11:03:33,520 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20250208_00121
+2025-08-26 11:04:27,883 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250303_00142
+2025-08-26 11:04:27,884 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20250303_00142
+2025-08-26 11:05:04,686 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20241029_00027
+2025-08-26 11:05:05,658 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20241029_00027
+2025-08-26 11:05:47,186 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20241031_00027
+2025-08-26 11:05:48,072 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20241031_00027
+2025-08-26 11:06:39,752 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250625_00259
+2025-08-26 11:06:40,386 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20250625_00259
+2025-08-26 11:07:32,637 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20241012_00027
+2025-08-26 11:07:33,564 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20241012_00027
+2025-08-26 11:08:30,054 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20241018_00027
+2025-08-26 11:08:31,276 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20241018_00027
+2025-08-26 11:09:42,415 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250106_00076
+2025-08-26 11:09:43,471 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20250106_00076
+2025-08-26 11:10:55,268 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250725_00274
+2025-08-26 11:10:55,268 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250725_00274
+2025-08-26 11:10:55,268 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250517_00224
+2025-08-26 11:10:56,082 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20250517_00224
+2025-08-26 11:12:03,016 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250622_00248
+2025-08-26 11:12:03,717 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20250622_00248
+2025-08-26 11:12:57,191 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250624_00257
+2025-08-26 11:12:57,848 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20250624_00257
+2025-08-26 11:13:59,236 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250822_00301
+2025-08-26 11:13:59,237 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250822_00301
+2025-08-26 11:13:59,237 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20241123_00030
+2025-08-26 11:14:00,211 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20241123_00030
+2025-08-26 11:14:58,580 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250304_00142
+2025-08-26 11:14:59,472 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20250304_00142
+2025-08-26 11:15:57,013 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250206_00118
+2025-08-26 11:15:57,914 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20250206_00118
+2025-08-26 11:16:51,226 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250623_00248
+2025-08-26 11:16:51,907 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20250623_00248
+2025-08-26 11:17:36,994 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20241107_00027
+2025-08-26 11:17:37,890 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20241107_00027
+2025-08-26 11:18:27,674 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250817_00289
+2025-08-26 11:18:27,675 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250817_00289
+2025-08-26 11:18:27,675 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20241001_00018
+2025-08-26 11:18:28,696 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20241001_00018
+2025-08-26 11:19:05,729 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250530_00231
+2025-08-26 11:19:06,548 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20250530_00231
+2025-08-26 11:20:31,042 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20241229_00061
+2025-08-26 11:20:32,104 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20241229_00061
+2025-08-26 11:21:29,812 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20241009_00027
+2025-08-26 11:21:30,762 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20241009_00027
+2025-08-26 11:22:28,190 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250127_00099
+2025-08-26 11:22:29,169 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20250127_00099
+2025-08-26 11:23:14,700 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250427_00201
+2025-08-26 11:23:15,693 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20250427_00201
+2025-08-26 11:24:02,982 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250701_00261
+2025-08-26 11:24:02,982 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250701_00261
+2025-08-26 11:24:02,982 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20241011_00027
+2025-08-26 11:24:02,983 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20241011_00027
+2025-08-26 11:25:10,746 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250215_00122
+2025-08-26 11:25:11,709 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20250215_00122
+2025-08-26 11:26:15,932 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250531_00232
+2025-08-26 11:26:16,775 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20250531_00232
+2025-08-26 11:27:18,437 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20241104_00027
+2025-08-26 11:27:19,490 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20241104_00027
+2025-08-26 11:28:13,811 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20241119_00029
+2025-08-26 11:28:14,761 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20241119_00029
+2025-08-26 11:29:04,993 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250121_00090
+2025-08-26 11:29:05,937 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20250121_00090
+2025-08-26 11:29:41,765 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20241219_02740
+2025-08-26 11:29:42,652 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20241219_02740
+2025-08-26 11:30:00,796 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20241023_00027
+2025-08-26 11:30:11,808 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20241023_00027

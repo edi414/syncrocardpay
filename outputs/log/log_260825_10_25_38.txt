@@ -1,0 +1,172 @@
+2025-08-26 10:25:39,058 - main - [INFO] - Conexão FTPS estabelecida com sucesso.
+2025-08-26 10:25:39,611 - main - [INFO] - Arquivos encontrados no SFTP: 255
+2025-08-26 10:25:39,666 - main - [INFO] - Arquivos encontrados no Google Drive: 0
+2025-08-26 10:25:40,983 - main - [INFO] - Arquivos registrados no banco: 0
+2025-08-26 10:25:40,984 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250704_00266
+2025-08-26 10:25:40,984 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250704_00266
+2025-08-26 10:25:40,984 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250612_00243
+2025-08-26 10:25:40,984 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250612_00243
+2025-08-26 10:25:40,984 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250807_00278
+2025-08-26 10:25:40,984 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250807_00278
+2025-08-26 10:25:40,984 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250825_00307
+2025-08-26 10:25:40,984 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250825_00307
+2025-08-26 10:25:40,984 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250608_00241
+2025-08-26 10:25:40,984 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250608_00241
+2025-08-26 10:25:40,984 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250723_00274
+2025-08-26 10:25:40,985 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250723_00274
+2025-08-26 10:25:40,985 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250629_00261
+2025-08-26 10:25:40,985 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250629_00261
+2025-08-26 10:25:40,985 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250709_00266
+2025-08-26 10:25:40,985 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250709_00266
+2025-08-26 10:25:40,985 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250814_00288
+2025-08-26 10:25:40,985 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250814_00288
+2025-08-26 10:25:40,985 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250713_00267
+2025-08-26 10:25:40,985 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250713_00267
+2025-08-26 10:25:40,985 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250821_00300
+2025-08-26 10:25:40,985 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250821_00300
+2025-08-26 10:25:40,985 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250722_00273
+2025-08-26 10:25:40,985 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250722_00273
+2025-08-26 10:25:40,985 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250705_00266
+2025-08-26 10:25:40,985 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250705_00266
+2025-08-26 10:25:40,985 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250726_00274
+2025-08-26 10:25:40,985 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250726_00274
+2025-08-26 10:25:40,985 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250808_00278
+2025-08-26 10:25:40,985 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250808_00278
+2025-08-26 10:25:40,985 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250813_03180
+2025-08-26 10:25:40,985 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250813_03180
+2025-08-26 10:25:40,985 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250809_00278
+2025-08-26 10:25:40,985 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250809_00278
+2025-08-26 10:25:40,985 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250731_00274
+2025-08-26 10:25:40,985 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250731_00274
+2025-08-26 10:25:40,985 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250810_00278
+2025-08-26 10:25:40,985 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250810_00278
+2025-08-26 10:25:40,985 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250715_00267
+2025-08-26 10:25:40,985 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250715_00267
+2025-08-26 10:25:40,985 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250610_00243
+2025-08-26 10:25:40,985 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250610_00243
+2025-08-26 10:25:40,985 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250727_00274
+2025-08-26 10:25:40,985 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250727_00274
+2025-08-26 10:25:40,985 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250614_00244
+2025-08-26 10:25:40,985 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250614_00244
+2025-08-26 10:25:40,986 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250714_00267
+2025-08-26 10:25:40,986 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250714_00267
+2025-08-26 10:25:40,986 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250615_00244
+2025-08-26 10:25:40,986 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250615_00244
+2025-08-26 10:25:40,986 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250725_00274
+2025-08-26 10:25:40,986 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250725_00274
+2025-08-26 10:25:40,986 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250619_00247
+2025-08-26 10:25:40,986 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250619_00247
+2025-08-26 10:25:40,986 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250729_00274
+2025-08-26 10:25:40,986 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250729_00274
+2025-08-26 10:25:40,986 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250816_00289
+2025-08-26 10:25:40,986 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250816_00289
+2025-08-26 10:25:40,986 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250811_00278
+2025-08-26 10:25:40,986 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250811_00278
+2025-08-26 10:25:40,986 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250708_00266
+2025-08-26 10:25:40,986 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250708_00266
+2025-08-26 10:25:40,986 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250611_00243
+2025-08-26 10:25:40,986 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250611_00243
+2025-08-26 10:25:40,986 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250819_00299
+2025-08-26 10:25:40,986 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250819_00299
+2025-08-26 10:25:40,986 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250703_00262
+2025-08-26 10:25:40,986 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250703_00262
+2025-08-26 10:25:40,986 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250822_00301
+2025-08-26 10:25:40,986 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250822_00301
+2025-08-26 10:25:40,986 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250815_00288
+2025-08-26 10:25:40,986 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250815_00288
+2025-08-26 10:25:40,986 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250817_00289
+2025-08-26 10:25:40,986 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250817_00289
+2025-08-26 10:25:40,986 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250802_00276
+2025-08-26 10:25:40,986 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250802_00276
+2025-08-26 10:25:40,986 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250824_00307
+2025-08-26 10:25:40,986 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250824_00307
+2025-08-26 10:25:40,986 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250801_00276
+2025-08-26 10:25:40,986 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250801_00276
+2025-08-26 10:25:40,986 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250826_00307
+2025-08-26 10:25:40,986 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250826_00307
+2025-08-26 10:25:40,986 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250716_00267
+2025-08-26 10:25:40,986 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250716_00267
+2025-08-26 10:25:40,987 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250813_00279
+2025-08-26 10:25:40,987 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250813_00279
+2025-08-26 10:25:40,987 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250702_00261
+2025-08-26 10:25:40,987 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250702_00261
+2025-08-26 10:25:40,987 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250630_00261
+2025-08-26 10:25:40,987 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250630_00261
+2025-08-26 10:25:40,987 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250620_00247
+2025-08-26 10:25:40,987 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250620_00247
+2025-08-26 10:25:40,987 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250616_00244
+2025-08-26 10:25:40,987 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250616_00244
+2025-08-26 10:25:40,987 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250820_00300
+2025-08-26 10:25:40,987 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250820_00300
+2025-08-26 10:25:40,987 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250706_00266
+2025-08-26 10:25:40,987 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250706_00266
+2025-08-26 10:25:40,987 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250820_03214
+2025-08-26 10:25:40,987 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250820_03214
+2025-08-26 10:25:40,987 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250625_00259
+2025-08-26 10:25:40,987 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250625_00259
+2025-08-26 10:25:40,987 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250707_00266
+2025-08-26 10:25:40,987 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250707_00266
+2025-08-26 10:25:40,987 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250724_00274
+2025-08-26 10:25:40,987 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250724_00274
+2025-08-26 10:25:40,987 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250812_00279
+2025-08-26 10:25:40,987 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250812_00279
+2025-08-26 10:25:40,987 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250719_00273
+2025-08-26 10:25:40,987 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250719_00273
+2025-08-26 10:25:40,987 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250627_00261
+2025-08-26 10:25:40,987 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250627_00261
+2025-08-26 10:25:40,987 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250622_00248
+2025-08-26 10:25:40,987 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250622_00248
+2025-08-26 10:25:40,987 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250721_00273
+2025-08-26 10:25:40,987 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250721_00273
+2025-08-26 10:25:40,987 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250803_00276
+2025-08-26 10:25:40,987 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250803_00276
+2025-08-26 10:25:40,987 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250718_00273
+2025-08-26 10:25:40,987 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250718_00273
+2025-08-26 10:25:40,987 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250609_00241
+2025-08-26 10:25:40,987 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250609_00241
+2025-08-26 10:25:40,987 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250624_00257
+2025-08-26 10:25:40,987 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250624_00257
+2025-08-26 10:25:40,987 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250823_00307
+2025-08-26 10:25:40,987 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250823_00307
+2025-08-26 10:25:40,987 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250728_00274
+2025-08-26 10:25:40,987 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250728_00274
+2025-08-26 10:25:40,988 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250621_00248
+2025-08-26 10:25:40,988 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250621_00248
+2025-08-26 10:25:40,988 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250818_00289
+2025-08-26 10:25:40,988 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250818_00289
+2025-08-26 10:25:40,988 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250628_00261
+2025-08-26 10:25:40,988 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250628_00261
+2025-08-26 10:25:40,988 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250618_00245
+2025-08-26 10:25:40,988 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250618_00245
+2025-08-26 10:25:40,988 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250712_00267
+2025-08-26 10:25:40,988 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250712_00267
+2025-08-26 10:25:40,988 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250710_00267
+2025-08-26 10:25:40,988 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250710_00267
+2025-08-26 10:25:40,988 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250805_00276
+2025-08-26 10:25:40,988 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250805_00276
+2025-08-26 10:25:40,988 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250804_00276
+2025-08-26 10:25:40,988 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250804_00276
+2025-08-26 10:25:40,988 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250613_00243
+2025-08-26 10:25:40,988 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250613_00243
+2025-08-26 10:25:40,988 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250623_00248
+2025-08-26 10:25:40,988 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250623_00248
+2025-08-26 10:25:40,988 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250626_00259
+2025-08-26 10:25:40,988 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250626_00259
+2025-08-26 10:25:40,988 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250730_00274
+2025-08-26 10:25:40,988 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250730_00274
+2025-08-26 10:25:40,988 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250606_00241
+2025-08-26 10:25:40,988 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250606_00241
+2025-08-26 10:25:40,988 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250720_00273
+2025-08-26 10:25:40,988 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250720_00273
+2025-08-26 10:25:40,988 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250617_00245
+2025-08-26 10:25:40,988 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250617_00245
+2025-08-26 10:25:40,988 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250711_00267
+2025-08-26 10:25:40,988 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250711_00267
+2025-08-26 10:25:40,988 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250607_00241
+2025-08-26 10:25:40,988 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250607_00241
+2025-08-26 10:25:40,988 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250806_00276
+2025-08-26 10:25:40,988 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250806_00276
+2025-08-26 10:25:40,989 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250701_00261
+2025-08-26 10:25:40,989 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250701_00261
+2025-08-26 10:25:40,989 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250717_00270
+2025-08-26 10:25:40,989 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250717_00270

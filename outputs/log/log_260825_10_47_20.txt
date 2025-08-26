@@ -1,0 +1,6 @@
+2025-08-26 10:47:21,344 - main - [INFO] - Conexão FTPS estabelecida com sucesso.
+2025-08-26 10:47:21,936 - main - [INFO] - Arquivos encontrados no SFTP: 255
+2025-08-26 10:47:22,004 - main - [INFO] - Arquivos encontrados no Google Drive: 279
+2025-08-26 10:47:23,385 - main - [INFO] - Arquivos registrados no banco: 1
+2025-08-26 10:47:23,455 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250303_00142
+2025-08-26 10:47:24,514 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20250303_00142

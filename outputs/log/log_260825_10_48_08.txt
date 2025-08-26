@@ -1,0 +1,14 @@
+2025-08-26 10:48:09,364 - main - [INFO] - Conexão FTPS estabelecida com sucesso.
+2025-08-26 10:48:09,956 - main - [INFO] - Arquivos encontrados no SFTP: 255
+2025-08-26 10:48:10,024 - main - [INFO] - Arquivos encontrados no Google Drive: 279
+2025-08-26 10:48:11,409 - main - [INFO] - Arquivos registrados no banco: 1
+2025-08-26 10:48:11,418 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250109_00079
+2025-08-26 10:48:12,323 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20250109_00079
+2025-08-26 10:49:08,445 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250723_00274
+2025-08-26 10:49:08,446 - main - [WARNING] - Arquivo não encontrado no Google Drive: EXTRATO_UNICA_51309_20250723_00274
+2025-08-26 10:49:08,446 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20241014_00027
+2025-08-26 10:49:09,467 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20241014_00027
+2025-08-26 10:49:53,479 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20250421_00195
+2025-08-26 10:49:54,236 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20250421_00195
+2025-08-26 10:50:47,813 - main - [INFO] - Processando arquivo: EXTRATO_UNICA_51309_20240929_00018
+2025-08-26 10:50:49,252 - main - [INFO] - Arquivo copiado do Google Drive para processamento: EXTRATO_UNICA_51309_20240929_00018

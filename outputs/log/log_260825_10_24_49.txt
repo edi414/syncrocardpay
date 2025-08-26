@@ -1,0 +1,4 @@
+2025-08-26 10:24:50,792 - main - [INFO] - Conexão FTPS estabelecida com sucesso.
+2025-08-26 10:24:51,338 - main - [INFO] - Arquivos encontrados no SFTP: 255
+2025-08-26 10:24:51,393 - main - [INFO] - Arquivos encontrados no Google Drive: 0
+2025-08-26 10:24:51,961 - main - [ERROR] - Erro ao executar o processo: cannot access local variable 'conn' where it is not associated with a value
