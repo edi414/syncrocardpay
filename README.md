@@ -2,11 +2,11 @@
 
 Automated system for processing and reconciling electronic statements from credit/debit card transactions.
 
-## 🎯 Business Problem
+## Business Problem
 
 This system solves the challenge of manually processing and reconciling card payment transaction files from multiple sources (FTPS servers and Google Drive), ensuring data integrity and providing a centralized database for financial analysis and reporting.
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 syncrocardpay/
@@ -22,7 +22,7 @@ syncrocardpay/
 └── setup_cronjob.sh         # Cronjob setup script
 ```
 
-## 🛠️ Technologies
+## Technologies
 
 - **Python 3.x** - Core programming language
 - **PostgreSQL** - Primary database (via psycopg2)
@@ -33,7 +33,7 @@ syncrocardpay/
 - **python-dotenv** - Environment variable management
 - **logging** - Comprehensive logging system
 
-## 🚀 Installation
+## Installation
 
 1. **Clone the repository:**
    ```bash
@@ -67,7 +67,7 @@ syncrocardpay/
    GOOGLE_DRIVE_DIRECTORY=/path/to/google/drive/folder
    ```
 
-## 🔄 Process Flow
+## Process Flow
 
 1. **File Discovery**: Connects to FTPS server and Google Drive to identify new transaction files
 2. **File Synchronization**: Copies files from Google Drive to local processing directory
@@ -76,14 +76,14 @@ syncrocardpay/
 5. **File Management**: Tracks processed files to avoid reprocessing
 6. **Logging**: Comprehensive logging of all operations and errors
 
-## 📊 Data Model
+## Data Model
 
 The system implements a dimensional data model with:
 - **Fact Table**: Transaction details (amounts, dates, card info, etc.)
 - **Dimension Tables**: Time, Store, Product, and Payment method dimensions
 - **Control Tables**: File processing status and metadata
 
-## ⚙️ Usage
+## Usage
 
 ### Manual Execution
 ```bash
@@ -96,14 +96,14 @@ chmod +x setup_cronjob.sh
 ./setup_cronjob.sh
 ```
 
-## 📝 Logging
+## Logging
 
 Logs are saved in `outputs/log/` with timestamp format:
 ```
 log_DDMMYY_HH_MM_SS.txt
 ```
 
-## 🔧 Configuration
+## Configuration
 
 ### Cronjob Setup for macOS
 The `setup_cronjob.sh` script configures automatic execution. To run daily at 09:30 BR time:
@@ -114,7 +114,7 @@ The `setup_cronjob.sh` script configures automatic execution. To run daily at 09
 # For 09:30 BR time (12:30 UTC): 30 12 * * *
 ```
 
-## ⚠️ Important Notes
+## Important Notes
 
 - Never commit real credentials to the repository
 - Always use `.env` file for sensitive configurations
@@ -122,7 +122,7 @@ The `setup_cronjob.sh` script configures automatic execution. To run daily at 09
 - Ensure PostgreSQL database is accessible
 - Google Drive folder must be properly configured
 
-## 🛠️ Development
+## Development
 
 ### Adding New Validations
 Edit `scripts/transform_files.py` to add new data validation rules.
@@ -130,6 +130,6 @@ Edit `scripts/transform_files.py` to add new data validation rules.
 ### Modifying Data Structure
 Edit `scripts/reading_files.py` to change file parsing logic.
 
-## 📄 License
+## License
 
 Internal use only.
