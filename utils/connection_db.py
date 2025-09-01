@@ -2,10 +2,12 @@ from psycopg2 import sql
 import psycopg2
 from psycopg2.extras import execute_values
 import pandas as pd
-import logging
 from datetime import datetime
 import os
 from typing import Dict, List, Optional, Union
+from utils.logger import setup_logger
+
+logger = setup_logger("connection_db")
 
 def get_existing_records(user, host, password, database, port, schema, table, key_column):
     """Retorna lista de registros existentes em uma tabela baseado na coluna chave"""
@@ -33,7 +35,7 @@ def get_existing_records(user, host, password, database, port, schema, table, ke
             return [row[0] for row in results]
             
     except Exception as e:
-        logging.error(f"Erro ao buscar registros existentes: {e}")
+        logger.error(f"Erro ao buscar registros existentes: {e}")
         raise
     finally:
         if conn:
@@ -70,10 +72,10 @@ def insert_df_to_db(user, host, password, database, port, schema, table, df):
         with conn.cursor() as cur:
             cur.executemany(query, records)
             conn.commit()
-            logging.info(f"{len(records)} registros inseridos na tabela {table}")
+            logger.info(f"{len(records)} registros inseridos na tabela {table}")
             
     except Exception as e:
-        logging.error(f"Erro ao inserir dados na tabela {table}: {e}")
+        logger.error(f"Erro ao inserir dados na tabela {table}: {e}")
         if conn:
             conn.rollback()
         raise
@@ -105,7 +107,7 @@ def get_processed_files(user, host, password, database, port, schema='unica_tran
             return processed_files
             
     except Exception as e:
-        logging.error(f"Erro ao buscar arquivos processados: {e}")
+        logger.error(f"Erro ao buscar arquivos processados: {e}")
         raise
     finally:
         if conn:
@@ -143,11 +145,11 @@ def register_file_processing(user, host, password, database, port, file_name, da
             
             file_id = cur.fetchone()[0]
             conn.commit()
-            logging.info(f"Registro de processamento criado para o arquivo {file_name}")
+            logger.info(f"Registro de processamento criado para o arquivo {file_name}")
             return file_id
             
     except Exception as e:
-        logging.error(f"Erro ao registrar processamento do arquivo {file_name}: {e}")
+        logger.error(f"Erro ao registrar processamento do arquivo {file_name}: {e}")
         if conn:
             conn.rollback()
         raise
@@ -159,13 +161,13 @@ def get_google_drive_files(directory):
     """Lista arquivos existentes no diretório do Google Drive"""
     try:
         if not os.path.exists(directory):
-            logging.warning(f"Diretório do Google Drive não encontrado: {directory}")
+            logger.warning(f"Diretório do Google Drive não encontrado: {directory}")
             return []
             
         files = [f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f))]
         return files
     except Exception as e:
-        logging.error(f"Erro ao listar arquivos do Google Drive: {e}")
+        logger.error(f"Erro ao listar arquivos do Google Drive: {e}")
         return []
 
 def get_file_processing_status(user, host, password, database, port, schema='unica_transactions'):
@@ -192,7 +194,7 @@ def get_file_processing_status(user, host, password, database, port, schema='uni
             return {row[0]: {'status': row[1], 'erro': row[2]} for row in results}
             
     except Exception as e:
-        logging.error(f"Erro ao buscar status de processamento dos arquivos: {e}")
+        logger.error(f"Erro ao buscar status de processamento dos arquivos: {e}")
         raise
     finally:
         if conn:
@@ -220,7 +222,7 @@ def delete_file_data(user: str, host: str, password: str, database: str,
             
             result = cur.fetchone()
             if not result:
-                logging.warning(f"Arquivo {file_name} não encontrado no banco de dados")
+                logger.warning(f"Arquivo {file_name} não encontrado no banco de dados")
                 return False
                 
             file_id = result[0]
@@ -236,11 +238,11 @@ def delete_file_data(user: str, host: str, password: str, database: str,
             """).format(sql.Identifier(schema)), (file_id,))
             
             conn.commit()
-            logging.info(f"Dados do arquivo {file_name} deletados com sucesso")
+            logger.info(f"Dados do arquivo {file_name} deletados com sucesso")
             return True
             
     except Exception as e:
-        logging.error(f"Erro ao deletar dados do arquivo {file_name}: {e}")
+        logger.error(f"Erro ao deletar dados do arquivo {file_name}: {e}")
         if conn:
             conn.rollback()
         return False

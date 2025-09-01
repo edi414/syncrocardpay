@@ -16,7 +16,8 @@ if [ -z "$PYTHON_PATH" ]; then
 fi
 
 # Create cronjob command (09:30 BR time = 12:30 UTC)
-CRON_COMMAND="30 12 * * * cd $CURRENT_DIR && $PYTHON_PATH main.py >> $CURRENT_DIR/outputs/log/cron.log 2>&1"
+# Using conda environment
+CRON_COMMAND="30 12 * * * cd $CURRENT_DIR && /opt/miniconda3/bin/conda run -n acaso_python_311 python3 main.py >> $CURRENT_DIR/outputs/log/cron.log 2>&1"
 
 # Check if cronjob already exists
 if crontab -l 2>/dev/null | grep -q "main.py"; then

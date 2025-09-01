@@ -1,4 +1,7 @@
 import pandas as pd
+from utils.logger import setup_logger
+
+logger = setup_logger("reading_files")
 
 class ExtratoTransacao:
     def __init__(self, file_path):
@@ -26,7 +29,7 @@ class ExtratoTransacao:
                 'nseq_registro': header[72:78]
             }
         else:
-            print("Cabeçalho não encontrado ou inválido.")
+            logger.error("Cabeçalho não encontrado ou inválido.")
             return None
 
     def parse_trailer(self):
@@ -38,7 +41,7 @@ class ExtratoTransacao:
                 'nseq_registro': trailer[8:14]
             }
         else:
-            print("Trailer não encontrado ou inválido.")
+            logger.error("Trailer não encontrado ou inválido.")
             return None
 
     def parse_transacao(self, transacao):

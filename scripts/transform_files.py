@@ -1,4 +1,7 @@
 import pandas as pd
+from utils.logger import setup_logger
+
+logger = setup_logger("transform_files")
 
 class TransformerTrasacoes:
     def __init__(self, dataframe):
@@ -160,8 +163,11 @@ class TransformerTrasacoes:
             self.errors.append("Erro no campo 'agencia': Deve ter exatamente 6 dígitos.")
 
     def validate_conta(self):
-        if not self.df['conta'].apply(lambda x: isinstance(x, str) and len(x) == 6).all():
-            self.errors.append("Erro no campo 'conta': Deve ter exatamente 6 dígitos.")
+        if not self.df['conta'].apply(lambda x: isinstance(x, str) and len(x) in [5, 6]).all():
+            # Log dos valores que estão falhando
+            invalid_contas = self.df[~self.df['conta'].apply(lambda x: isinstance(x, str) and len(x) in [5, 6])]['conta'].unique()
+            logger.warning(f"Valores inválidos no campo 'conta': {invalid_contas}")
+            self.errors.append("Erro no campo 'conta': Deve ter 5 ou 6 dígitos.")
 
     def validate_codigo_autorizacao(self):
         if not self.df['codigo_autorizacao'].apply(lambda x: isinstance(x, str) and len(x) == 12).all():
@@ -344,10 +350,12 @@ class TransformerTrasacoes:
         
         # Exibe os erros, se houver
         if self.errors:
-            print("Validações falharam:")
+            logger.error("Validações falharam:")
+            for error in self.errors:
+                logger.error(f"  - {error}")
             return self.errors
         else:
-            print("Todas as validações passaram.")
+            logger.info("Todas as validações passaram.")
             return self.df
 
 

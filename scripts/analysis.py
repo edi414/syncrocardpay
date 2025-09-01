@@ -1,12 +1,14 @@
 import pandas as pd
 import numpy as np
 from typing import Dict, List, Tuple
-import logging
 import psycopg2
 import matplotlib.pyplot as plt
 import seaborn as sns
 from decimal import Decimal
 import matplotlib.dates as mdates
+from utils.logger import setup_logger
+
+logger = setup_logger("analysis")
 
 plt.style.use('seaborn-v0_8')
 sns.set_palette(['#8B0000', '#A52A2A', '#B22222', '#DC143C'])
@@ -84,7 +86,7 @@ def calculate_mdr_by_produto(connection_params: Dict, mes: str = None) -> pd.Dat
         df = pd.read_sql(query, conn, params=params)
         return df
     except Exception as e:
-        logging.error(f"Erro ao calcular MDR por produto: {e}")
+        logger.error(f"Erro ao calcular MDR por produto: {e}")
         return pd.DataFrame()
     finally:
         if conn:
@@ -167,7 +169,7 @@ def simulate_mdr_by_product(connection_params, taxas_json):
                         return (row['volume_total'] * taxa) / Decimal('100')
                     return row['mdr_atual']
                 except Exception as e:
-                    logging.error(f"Erro ao calcular MDR proposto para {row['codigo_produto']}: {str(e)}")
+                    logger.error(f"Erro ao calcular MDR proposto para {row['codigo_produto']}: {str(e)}")
                     return row['mdr_atual']
             
             df['mdr_proposto'] = df.apply(calcular_mdr_proposto, axis=1)
@@ -215,7 +217,7 @@ def simulate_mdr_by_product(connection_params, taxas_json):
             return df, impacto_total
             
     except Exception as e:
-        logging.error(f"Erro ao simular MDR por produto: {str(e)}")
+        logger.error(f"Erro ao simular MDR por produto: {str(e)}")
         raise
     finally:
         if conn:

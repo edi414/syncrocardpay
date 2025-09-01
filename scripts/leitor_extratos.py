@@ -273,6 +273,9 @@ def process_file(file_name, local_file_path, google_drive_path, connection_param
         
         if isinstance(df_transacoes_validated, list):
             error_msg = "\n".join(df_transacoes_validated)
+            logger.error(f"Erros de validação no arquivo {file_name}:")
+            for error in df_transacoes_validated:
+                logger.error(f"  - {error}")
             register_file_processing(
                 **connection_params,
                 file_name=file_name,
