@@ -160,3 +160,15 @@ cython_debug/
 #.idea/
 
 outputs/
+.DS_Store
+.serverless/*
+deploy.sh
+setup_parameters.sh
+local_run_s3.sh
+response.json
+cloudformation-template-update-stack.json
+serverless-state.json
+syncrocardpay.zip
+node_modules/*
+package-lock.json
+package.json

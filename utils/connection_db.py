@@ -1,10 +1,7 @@
 from psycopg2 import sql
 import psycopg2
-from psycopg2.extras import execute_values
 import pandas as pd
 from datetime import datetime
-import os
-from typing import Dict, List, Optional, Union
 from utils.logger import setup_logger
 
 logger = setup_logger("connection_db")
@@ -156,19 +153,6 @@ def register_file_processing(user, host, password, database, port, file_name, da
     finally:
         if conn:
             conn.close()
-
-def get_google_drive_files(directory):
-    """Lista arquivos existentes no diretório do Google Drive"""
-    try:
-        if not os.path.exists(directory):
-            logger.warning(f"Diretório do Google Drive não encontrado: {directory}")
-            return []
-            
-        files = [f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory, f))]
-        return files
-    except Exception as e:
-        logger.error(f"Erro ao listar arquivos do Google Drive: {e}")
-        return []
 
 def get_file_processing_status(user, host, password, database, port, schema='unica_transactions'):
     """Retorna o status de processamento de todos os arquivos registrados"""

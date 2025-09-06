@@ -1,7 +1,5 @@
 import pandas as pd
 from datetime import datetime
-import shutil
-import sys
 from scripts.reading_files import ExtratoTransacao
 from scripts.transform_files import TransformerTrasacoes
 from utils.connection_db import (
@@ -227,7 +225,7 @@ def register_file_processing(user, host, password, database, port, file_name, da
             conn.close()
         raise e
 
-def process_file(file_name, local_file_path, google_drive_path, connection_params, is_tryout=False):
+def process_file(file_name, local_file_path, s3_uri, connection_params, is_tryout=False):
     """Processa um arquivo individual"""
     conn = None
     try:
@@ -247,7 +245,7 @@ def process_file(file_name, local_file_path, google_drive_path, connection_param
         df_header = df_header[['codigo_registro', 'versao_layout', 'data_geracao',
                             'hora_geracao', 'tipo_processamento', 'destinatario']]
         df_summary_processing = pd.concat([df_header, df_trailer[['total_registros']]], axis=1)
-        df_summary_processing['file_path'] = google_drive_path
+        df_summary_processing['file_path'] = s3_uri
         df_summary_processing['file_name'] = file_name
         df_transacoes['file_name'] = file_name
 
@@ -263,7 +261,7 @@ def process_file(file_name, local_file_path, google_drive_path, connection_param
                 data_geracao=pd.to_datetime(df_header['data_geracao'].iloc[0]).date(),
                 status='ERRO',
                 error=error_msg,
-                google_drive_path=google_drive_path,
+                google_drive_path=s3_uri,
                 conn=conn
             )
             return False
@@ -282,7 +280,7 @@ def process_file(file_name, local_file_path, google_drive_path, connection_param
                 data_geracao=pd.to_datetime(df_header['data_geracao'].iloc[0]).date(),
                 status='ERRO',
                 error=error_msg,
-                google_drive_path=google_drive_path,
+                google_drive_path=s3_uri,
                 conn=conn
             )
             return False
@@ -303,7 +301,7 @@ def process_file(file_name, local_file_path, google_drive_path, connection_param
             file_name=file_name,
             data_geracao=pd.to_datetime(df_header['data_geracao'].iloc[0]).date(),
             status='SUCESSO',
-            google_drive_path=google_drive_path,
+            google_drive_path=s3_uri,
             conn=conn
         )
 
@@ -326,7 +324,18 @@ def process_file(file_name, local_file_path, google_drive_path, connection_param
         conn.commit()
 
         if not is_tryout:
-            shutil.move(local_file_path, google_drive_path)
+            # S3-only: sempre envia para S3 usando a URI informada
+            from utils.s3_utils import parse_s3_uri, upload_s3_file
+            if not (isinstance(s3_uri, str) and s3_uri.startswith('s3://')):
+                logger.error("Caminho remoto inválido: esperado s3://bucket/key")
+                raise ValueError("Caminho remoto inválido: esperado s3://bucket/key")
+
+            bucket, key = parse_s3_uri(s3_uri)
+            upload_ok = upload_s3_file(bucket, key, local_file_path)
+            if upload_ok:
+                logger.info(f"Arquivo enviado para S3: {s3_uri}")
+            else:
+                logger.error(f"Falha ao enviar para S3: {s3_uri}")
 
         return True
 
@@ -346,7 +355,7 @@ def process_file(file_name, local_file_path, google_drive_path, connection_param
                 data_geracao=datetime.now().date(),  # Data atual como fallback
                 status='ERRO',
                 error=error_msg,
-                google_drive_path=google_drive_path
+                google_drive_path=s3_uri
             )
         except Exception as register_error:
             logger.error(f"Erro ao registrar erro de processamento: {register_error}")
@@ -356,28 +365,28 @@ def process_file(file_name, local_file_path, google_drive_path, connection_param
         if conn:
             conn.close()
 
-def analyze_files_to_process(sftp_files, google_drive_files, db_status):
+def analyze_files_to_process(sftp_files, s3_files, db_status):
     """Analisa quais arquivos precisam ser processados baseado em diferentes cenários"""
     files_to_process = []
     files_to_report = []
     
-    # Conjunto de todos os arquivos únicos (SFTP + Google Drive)
-    all_files = set(sftp_files + google_drive_files)
+    # Conjunto de todos os arquivos únicos (SFTP + S3)
+    all_files = set(sftp_files + s3_files)
     
     for file in all_files:
         if "EXTRATO" not in file:
             continue
             
         # Cenário 1: Arquivo novo no SFTP
-        if file in sftp_files and file not in google_drive_files and file not in db_status:
+        if file in sftp_files and file not in s3_files and file not in db_status:
             files_to_process.append(file)
             logger.info(f"Arquivo novo encontrado no SFTP: {file}")
             continue
             
-        # Cenário 2: Arquivo existe no Google Drive mas não está registrado no banco
-        if file in google_drive_files and file not in db_status:
+        # Cenário 2: Arquivo existe no S3 mas não está registrado no banco
+        if file in s3_files and file not in db_status:
             files_to_process.append(file)
-            logger.info(f"Arquivo encontrado no Google Drive sem registro no banco: {file}")
+            logger.info(f"Arquivo encontrado no S3 sem registro no banco: {file}")
             continue
             
         # Cenário 3: Arquivo está registrado com erro no banco
@@ -386,12 +395,12 @@ def analyze_files_to_process(sftp_files, google_drive_files, db_status):
             logger.info(f"Arquivo com erro encontrado para reprocessamento: {file}")
             continue
             
-        # Cenário 4: Arquivo está registrado como sucesso mas não existe no Google Drive
-        if file in db_status and db_status[file]['status'] == 'SUCESSO' and file not in google_drive_files:
+        # Cenário 4: Arquivo está registrado como sucesso mas não existe no S3
+        if file in db_status and db_status[file]['status'] == 'SUCESSO' and file not in s3_files:
             files_to_report.append({
                 'file': file,
                 'status': 'DESINCRONIZADO',
-                'message': 'Arquivo registrado como sucesso mas não existe no Google Drive'
+                'message': 'Arquivo registrado como sucesso mas não existe no S3'
             })
             logger.warning(f"Arquivo desincronizado encontrado: {file}")
             continue

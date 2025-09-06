@@ -22,7 +22,11 @@ def setup_logger(
     logger.addHandler(console_handler)
 
     if log_file:
-        os.makedirs(os.path.dirname(log_file), exist_ok=True)
+        # Na Lambda, usar /tmp para arquivos temporários
+        if os.path.exists('/var/task'):  # Detecta se está rodando na Lambda
+            log_file = f"/tmp/{os.path.basename(log_file)}"
+        else:
+            os.makedirs(os.path.dirname(log_file), exist_ok=True)
         file_handler = logging.FileHandler(log_file)
         file_handler.setFormatter(logging.Formatter(format_str))
         logger.addHandler(file_handler)
