@@ -185,9 +185,10 @@ class TransformerTrasacoes:
     
     def validate_codigo_produto(self):
         valid_values = {
-            '1': "Visa Crédito", '2': "Master Crédito", '3': "Visa Débito", 
-            '4': "Master Débito", '5': "Elo Crédito", '6': "Elo Débito", '10': 'Outros',
-            '12': 'Outros', '8': 'Outros', '9': 'Outros', '7': 'Outros', '11': 'Outros'
+            '1': "Visa Crédito", '2': "Master Crédito", '3': "Visa Débito",
+            '4': "Master Débito", '5': "Elo Crédito", '6': "Elo Débito",
+            '7': 'Outros', '8': 'Outros', '9': 'Outros', '10': 'Outros',
+            '11': 'Outros', '12': 'Outros', '13': 'Outros'
         }
         self.df['codigo_produto'] = self.df['codigo_produto'].apply(lambda x: str(int(x)))
 
@@ -280,8 +281,8 @@ class TransformerTrasacoes:
             self.df['nsu_origem'] = self.df['nsu_origem'].apply(lambda x: x.zfill(6))
 
     def validate_numero_operacao_recebivel(self):
-        if not self.df['numero_operacao_recebivel'].apply(lambda x: (isinstance(x, str) and (len(x) == 20 or x == ""))).all():
-            self.errors.append("Erro no campo 'numero_operacao_recebivel': Deve ter 20 caracteres ou estar vazio.")
+        if not self.df['numero_operacao_recebivel'].apply(lambda x: isinstance(x, str) and len(x) <= 20).all():
+            self.errors.append("Erro no campo 'numero_operacao_recebivel': Deve ter no máximo 20 caracteres.")
 
     def validate_sequencial_operacao_recebivel(self):
        if not self.df['sequencial_operacao_recebivel'].apply(lambda x: isinstance(x, str) and len(x) == 2).all():

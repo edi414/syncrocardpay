@@ -40,25 +40,29 @@ connection_database = {
 def main():
     sftp_files = []
     ftps = None
+    processed = 0
+    failed = 0
+    total = 0
+
     try:
         try:
             ftps = FTP_TLS(host)
             ftps.login(user=user, passwd=password)
             ftps.prot_p()
-            
+
             logger.info("Conexão FTPS estabelecida com sucesso.")
 
             ftps.cwd("/Saida")
             sftp_files = ftps.nlst()
             logger.info(f"Arquivos encontrados no SFTP: {len(sftp_files)}")
-            
+
         except Exception as e:
             logger.warning(f"Não foi possível conectar ao SFTP: {e}")
             logger.info("Continuando apenas com sincronização via S3")
 
         if not S3_BUCKET:
             logger.error("S3_BUCKET não configurado. Defina S3_BUCKET e S3_PREFIX no ambiente.")
-            return
+            raise RuntimeError("S3_BUCKET não configurado")
 
         s3_files = list_s3_files(S3_BUCKET, S3_PREFIX)
         logger.info(f"Arquivos encontrados no S3: {len(s3_files)}")
@@ -67,8 +71,8 @@ def main():
         logger.info(f"Arquivos registrados no banco: {len(db_status)}")
 
         files_to_process, files_to_report = analyze_files_to_process(
-            sftp_files, 
-            s3_files, 
+            sftp_files,
+            s3_files,
             db_status
         )
 
@@ -76,6 +80,8 @@ def main():
             logger.warning("Arquivos desincronizados encontrados:")
             for report in files_to_report:
                 logger.warning(f"- {report['file']}: {report['message']}")
+
+        total = len(files_to_process)
 
         for file_name in files_to_process:
             logger.info(f"Processando arquivo: {file_name}")
@@ -93,6 +99,7 @@ def main():
                     logger.info(f"Arquivo baixado do S3 para processamento: {file_name}")
                 else:
                     logger.error(f"Falha ao baixar do S3: {file_name}")
+                    failed += 1
                     continue
             # Se não estiver no S3, tenta baixar do SFTP
             elif ftps and file_name in sftp_files:
@@ -102,26 +109,51 @@ def main():
                     logger.info(f"Arquivo baixado do SFTP para processamento: {file_name}")
                 except Exception as e:
                     logger.error(f"Erro ao baixar arquivo do SFTP: {file_name} - {e}")
+                    failed += 1
                     continue
             else:
                 logger.warning(f"Arquivo não encontrado no S3 nem no SFTP: {file_name}")
+                failed += 1
                 continue
 
             # Caminho remoto alvo (S3)
             remote_path = f"s3://{S3_BUCKET}/{S3_PREFIX}/{file_name}"
             success = process_file(file_name, local_file_path, remote_path, connection_database, is_tryout=False)
 
-            if not success:
-                os.remove(local_file_path)
+            if success:
+                processed += 1
+            else:
+                failed += 1
+                if os.path.exists(local_file_path):
+                    os.remove(local_file_path)
                 logger.error(f"Erro ao processar arquivo {file_name}")
+
+        # Refresh conciliação se houve processamento com sucesso
+        if processed > 0:
+            try:
+                from scripts.refresh_conciliacao import full_refresh
+                refresh_result = full_refresh(connection_database)
+                logger.info(f"Refresh conciliação: {refresh_result}")
+            except Exception as e:
+                logger.error(f"Erro no refresh conciliação: {e}")
 
     except Exception as e:
         logger.error(f"Erro ao executar o processo: {e}")
+        raise
     finally:
         if ftps:
-            ftps.quit()
+            try:
+                ftps.quit()
+            except Exception:
+                pass
+
+    return {"processed": processed, "failed": failed, "total": total}
 
 def lambda_handler(event, context):
     """AWS Lambda entrypoint"""
-    main()
-    return {"status": "ok"}
+    result = main()
+    if result.get("failed", 0) > 0:
+        raise RuntimeError(
+            f"Processamento com falhas: {result['failed']}/{result['total']} arquivos falharam"
+        )
+    return {"status": "ok", **result}
