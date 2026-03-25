@@ -118,7 +118,13 @@ def main():
 
             # Caminho remoto alvo (S3)
             remote_path = f"s3://{S3_BUCKET}/{S3_PREFIX}/{file_name}"
-            success = process_file(file_name, local_file_path, remote_path, connection_database, is_tryout=False)
+
+            # Rotear para o processador correto
+            if "TRICARD" in file_name:
+                from scripts.leitor_tricard import process_tricard_file
+                success = process_tricard_file(file_name, local_file_path, remote_path, connection_database, is_tryout=False)
+            else:
+                success = process_file(file_name, local_file_path, remote_path, connection_database, is_tryout=False)
 
             if success:
                 processed += 1

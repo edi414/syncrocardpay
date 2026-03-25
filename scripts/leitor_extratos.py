@@ -374,7 +374,7 @@ def analyze_files_to_process(sftp_files, s3_files, db_status):
     all_files = set(sftp_files + s3_files)
     
     for file in all_files:
-        if "EXTRATO" not in file:
+        if "EXTRATO" not in file and "TRICARD" not in file:
             continue
             
         # Cenário 1: Arquivo novo no SFTP

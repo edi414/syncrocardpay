@@ -163,11 +163,11 @@ class TransformerTrasacoes:
             self.errors.append("Erro no campo 'agencia': Deve ter exatamente 6 dígitos.")
 
     def validate_conta(self):
-        if not self.df['conta'].apply(lambda x: isinstance(x, str) and len(x) in [5, 6]).all():
+        if not self.df['conta'].apply(lambda x: isinstance(x, str) and 0 < len(x) <= 11).all():
             # Log dos valores que estão falhando
-            invalid_contas = self.df[~self.df['conta'].apply(lambda x: isinstance(x, str) and len(x) in [5, 6])]['conta'].unique()
+            invalid_contas = self.df[~self.df['conta'].apply(lambda x: isinstance(x, str) and 0 < len(x) <= 11)]['conta'].unique()
             logger.warning(f"Valores inválidos no campo 'conta': {invalid_contas}")
-            self.errors.append("Erro no campo 'conta': Deve ter 5 ou 6 dígitos.")
+            self.errors.append("Erro no campo 'conta': Deve ter entre 1 e 11 caracteres.")
 
     def validate_codigo_autorizacao(self):
         if not self.df['codigo_autorizacao'].apply(lambda x: isinstance(x, str) and len(x) == 12).all():
