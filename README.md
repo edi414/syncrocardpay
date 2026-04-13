@@ -236,6 +236,36 @@ Use `scripts/local_run_s3.sh` for local development with S3 integration.
 - **EventBridge**: Free for basic scheduling
 - **Parameter Store**: Free for standard parameters
 
+## MDR Simulator
+
+Este projeto inclui um simulador de taxas MDR localizado no diretório `mdr-simulator`. O simulador permite comparar taxas históricas com novos cenários de mercado.
+
+### Como Iniciar
+
+Para rodar o simulador, você precisará de dois terminais abertos (um para o backend e outro para o frontend):
+
+**Terminal 1: Backend (API)**
+```bash
+cd mdr-simulator/backend
+npm install
+npm start
+```
+O backend rodará em [http://localhost:3001](http://localhost:3001).
+
+**Terminal 2: Frontend (Interface)**
+```bash
+cd mdr-simulator/frontend
+npm install
+npm run dev
+```
+O frontend rodará em [http://localhost:5173](http://localhost:5173).
+
+### Como Desligar
+
+Para encerrar o simulador:
+1. Vá em cada um dos terminais onde os processos estão rodando.
+2. Pressione `Ctrl + C` para interromper a execução.
+
 ## License
 
 Internal use only.
